@@ -12,12 +12,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/', function (req, res) {
-    res.render('home');
+    res.render('posts-index');
 });
 
 app.get("/posts/new", (req, res) => {
   res.render("posts-new");
 });
+
 
 
 app.listen(3000);
